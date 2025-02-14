@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Font and Text Properties Demonstration</h1>
+    <p style="font-size:20px;">This text demonstrates <strong>font-size</strong>.</p>
+    <p style="font-weight:bold;">This text demonstrates font-weight.</p>
+    <p style="font-style:italic;">This text demonstrates <strong>font-style</strong>.</p>
+    <p style="text-decoration:underline;">This text demonstrates <strong>text-decoration</strong>.</p>
+    <p style="text-transform: uppercase;">This text demonstrates <strong>Text-Transformation</strong>.</p>
+    <p style="text-align: center;background-color:rgb(212, 212, 212);padding: 7px;">This text demonstrates <strong>text-alignment</strong>.</p>"
+</body>
+</html>
