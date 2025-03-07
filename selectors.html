@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+            font-family: Arial,sans-serif;
+        }
+        #para {
+            color: red;
+            text-align: center; 
+            font-weight: bold;
+            font-family: Arial,sans-serif;
+        }
+        .para2 {
+            color: black;
+            text-align: center;
+            background-color: yellow;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Arial,sans-serif;
+        }
+        div p {
+            color: green;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial,sans-serif;
+        }
+        h2 {
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial,sans-serif;
+        }
+        #para::first-letter,.para2::first-letter,div p::first-letter {
+            color: red;
+            font-size: 150%;
+            font-family: Arial,sans-serif;
+        
+        }
+        p::first-letter {
+            color: red;
+            font-size: 150%;
+            font-family: Arial,sans-serif;
+            font-style: italic;
+        }
+        .para3 {
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Arial,sans-serif;
+        }
+        .para4 {
+            color: orange;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial,sans-serif;
+            text-decoration: underline;
+            font-style: italic;
+        }
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+        #para::after,.para2::after,.para3::after,.para4::after {
+            content: " (Read more...)";
+            color: grey;
+        }
+        div p::after {
+            content: " (Read more...)";
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple selectors</h1>
+    <p id="para">This is an ID selector example.</p>
+    <p class="para2">This is an class selector example.</p>
+    <h2>Combinator Selectors</h2>
+    <div>
+        <p style="background-color: rgb(174, 227, 248);">This paragraph is inside the div(desendent selector).</p>
+        <p>This is a direct child paragraph(child selector).</p>
+    </div>
+    <p class="para3">This paragraph comes after h2 element(general sibling selector).</p>
+    <h2>Pseudo-class & Pseudo-element Selectors. </h2>
+    <a href="#">Hover over this link</a>
+    <p class="para3">First letter is styled with pseudo-element.</p>
+    <input type="text" placeholder="click here and see the effect">
+    <h2>Attribute Selectors</h2>
+    <p class="para4">This paragraph has a title attribute.</p>
+    <input type="text" placeholder="Styled input field">
+</body>
+</html>
